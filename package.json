@@ -1,0 +1,24 @@
+{
+  "name": "jest-2024-05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "declareWinner.js",
+  "scripts": {
+    "test": "jest --coverage --watch"
+  },
+  "jest": {
+    "verbose": true,
+    "reporters": [
+      ["./node_modules/jest-html-reporter", {
+        "pageTitle": "Test Report"
+      }]
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-html-reporter": "^3.10.2"
+  }
+}

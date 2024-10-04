@@ -1,6 +1,6 @@
-function findUnique(numbers) {
-  let firstNumber = numbers[0];
-  let secondNumber = numbers[1];
+function findUnique(numbers) { 
+  let firstNumber = numbers[0]; 
+  let secondNumber = numbers[1]; 
   let defaultNumber;
 
   if (typeof numbers[0] === 'undefined') {
@@ -8,21 +8,20 @@ function findUnique(numbers) {
   }
 
   if (firstNumber === secondNumber)  {
-    defaultNumber = firstNumber;
+    defaultNumber = firstNumber; 
     for (let i=0; i<numbers.length; i++) {
-      let currentNumber = numbers[i];
-
+      let currentNumber = numbers[i]; 
       if (currentNumber !== defaultNumber) {
-        return currentNumber
+        return currentNumber 
       }
     }
   } else {
-    let thirdNumber = numbers[2];
+    let thirdNumber = numbers[2]; 
     
     if (thirdNumber === secondNumber) {
-      return firstNumber
+      return firstNumber 
     } else {
-      return secondNumber
+      return secondNumber 
     }
   }
 }
